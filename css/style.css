@@ -1,0 +1,392 @@
+:root {
+    --grey: #353535;
+    --blue: #01629e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    padding-left: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin-bottom: 0;
+}
+
+.my-7 {
+    margin-top: 112px;
+    margin-bottom: 112px;
+}
+
+/* common css */
+
+nav.navbar {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+}
+
+.navbar .navbar-brand img {
+    height: 70px;
+}
+
+nav.navbar ul.navbar-nav li a.nav-link {
+    padding: 0;
+    margin-left: 44px;
+    color: #fff;
+}
+
+nav.navbar ul.navbar-nav li a.nav-link:hover {
+    color: rgb(34, 151, 230);
+}
+
+nav.navbar ul.navbar-nav li a.nav-link.active {
+    color: rgb(34, 151, 230);
+}
+
+/* navbar ends */
+/* banner starts */
+#banner {
+    background: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#banner .banner-overlay {
+    background-color: rgba(0, 0, 0, 0.628);
+    padding: 230px 0 120px;
+}
+
+/* banner ends */
+#about {
+    padding: 100px 0;
+}
+
+/* about ends */
+
+#service {
+    padding: 100px 0;
+    margin-bottom: 400px;
+}
+
+#service .nav-link i {
+    font-size: 60px;
+}
+
+#features i {
+    color: #353535;
+}
+
+#features i:hover {
+
+    filter: invert(48%) sepia(72%) saturate(2401%) hue-rotate(184deg) brightness(98%) contrast(95%);
+}
+
+/* screenshot */
+
+#ss ul.slick-dots {
+    display: flex;
+    justify-content: center;
+}
+
+#ss ul.slick-dots li button {
+    color: transparent;
+    border: 3px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px var(--grey);
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#ss ul.slick-dots li.slick-active button {
+    background-color: var(--blue);
+    box-shadow: 0 0 0 4px var(--blue);
+}
+
+#ss ul.slick-dots li button:hover {
+    background-color: var(--blue);
+    box-shadow: 0 0 0 3px var(--blue);
+}
+
+#ss .slick-slider .slick-list {
+    padding: 99px 50px !important;
+    height: 635px;
+}
+
+#ss .slick-active.slick-current.slick-center {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+
+
+/* screenshot */
+
+/* video starts */
+#video {
+    background: url(../images/veno-bg.png);
+
+}
+
+#video .vid-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 200px;
+}
+
+#video .vid-overlay i {
+    color: #fff;
+    border: 5px solid #fff;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+}
+
+.vbox-content {
+    height: 700px;
+}
+
+/* video ends */
+
+/* price starts */
+#price {
+    padding: 100px 0;
+}
+
+#price .plan {
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: #f1f1f1;
+    padding: 50px 0px;
+    position: relative;
+}
+
+#price .plan .pricing {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+#price .plan .pricing .taka {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    border: 6px solid #f1f1f1;
+    padding-top: 30px;
+}
+
+#price .plan a {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    background-color: #01629e;
+    padding: 10px 20px;
+    transform-origin: top;
+}
+
+/* price ends */
+/* team starts  */
+#team {
+    padding: 50px 0 50px;
+    /* margin-bottom: 50px; */
+}
+
+#team .sec-title {
+    padding-bottom: 100px;
+}
+
+#team .team-member {
+    position: relative;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #f1f1f1;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    margin-bottom: 135px;
+}
+
+#team .team-member .team-img {
+    background-color: #f1f1f1;
+    position: relative;
+    z-index: 1;
+    /* margin-bottom: 100px; */
+
+}
+
+#team .team-member .team-img img {
+    width: 70%;
+    padding-top: 30px;
+
+}
+
+#team .team-member .team-img .team-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#team .team-member .team-details {
+    opacity: 0;
+    visibility: hidden;
+    margin-top: -135px;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform-origin: top;
+
+}
+
+#team .team-member:hover {
+    margin-top: -50px;
+    overflow: visible;
+    margin-bottom: -135px;
+
+}
+
+#team .team-member:hover .team-img .team-overlay {
+    opacity: 1;
+    visibility: visible;
+
+
+}
+
+#team .team-member:hover .team-details {
+    margin-top: 0;
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+}
+
+/* team ends */
+
+/* feedback starts */
+#feedback {
+    margin-bottom: 400px;
+    background: url(../images/banner.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+#feedback .feedback-overlay {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#feedback .fdbk-img img {
+    filter: opacity(0.5);
+    -webkit-filter: opacity(0.5);
+}
+
+#feedback .fdbk-img.slick-center img {
+    filter: opacity(1);
+    -webkit-filter: opacity(1);
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+
+#feedback .fdbk-person .slick-track {
+    padding: 50px 0;
+}
+#feedback .feedback-part {
+    position: relative;
+}
+#feedback .feedback-icon{
+    position: absolute;
+    top: 52%;
+    color: #fff;
+    font-size: 50px;
+    z-index: 999;
+}
+#feedback .feedback-prev{
+    left: 10%;
+}
+#feedback .feedback-next{
+    right: 10%;
+}
+/* feedback ends */
